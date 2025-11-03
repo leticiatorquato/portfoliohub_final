@@ -1,0 +1,2 @@
+# Projeto Robô Trading com IA
+Nesse projeto construi um robô em linguagem Python baseado em inteligência artificial, que a partir de experimentos de compra e venda de ações aprendeu a operar na bolsa de valores. Basta você inserir um saldo inicial que ele mostra o lucro que será obtido após as ações de compra e venda. Desenvolvi esse projeto durante o curso fundamentos de linguagem python para análise de dados e data science da Data Science Academy.
