@@ -1,0 +1,144 @@
+/*estilização geral da página*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 65, 86, 1),rgba(86, 124, 141, 1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    min-height: 100vh;
+}
+
+/*estilização da parte central da página*/
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*estilização do título*/
+#titulo {
+    font-size: 1.8em;
+    margin: 0.2em;
+}
+
+/*estilização do texto de explicação*/
+#explicacao{
+    width: 68em;
+    position: sticky;
+    margin-top: 0.8em;
+
+}
+
+/*aplicação da animação de pulsação no pulmão*/
+#pulmao{
+    transform-origin: center; /*define que a imagem do pulmão deve escalar a partir do centro*/
+    animation: pulsar 16s infinite; /*aplica a animação "pulsar" no pulmão por 16 segundos continuamente*/
+    animation-play-state: paused; /*faz com animação do pulmão comece parada e só seja iniciada quando o usuário clicar no botão de iniciar*/
+}
+
+/*sombra em volta do quadrado*/
+#quadrado{
+box-shadow: 0 0 1em rgba(47, 65, 86, 1);
+}
+
+/*aplicação da animação de carregamento na borda*/
+#borda {
+    animation: carregarborda 16s infinite; /*aplica a animação "carregarborda" na borda por 16 segundos continuamente*/
+    animation-play-state: paused; /*faz com animação da borda comece parada e só seja iniciada quando o usuário clicar no botão de iniciar*/
+}
+
+/*animação de pulsação*/
+@keyframes pulsar {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.3);}
+    50% {transform: scale(1.3);}
+    75% {transform: scale(1);}
+    100% {transform: scale(1);}
+    
+}
+
+/*animação de carregamento borda*/
+@keyframes carregarborda {
+    0% {stroke-dashoffset: 800;}
+    25% {stroke-dashoffset: 600;}
+    50% {stroke-dashoffset: 400;}
+    75% {stroke-dashoffset: 200;}
+    100% {stroke-dashoffset: 0;}
+}
+
+/*margens dos prendas*/
+#prenda1, #prenda2 {
+    margin: 0 1.1em;
+}
+
+/*estilização da caixa do temporizador*/
+#caixa-temporizador {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35em;
+    border-radius: 4em;
+    box-shadow: 0 0 1em rgba(47, 65, 86, 1);
+    margin-top: 1em;
+}
+
+/*estilização do texto da caixa do temporizador*/
+#texto-temporizador {
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+/*estilização da caixa dos inputs*/
+#inputs {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 1.2em;
+}
+
+/*estilização dos inputs*/
+#input_minuto, #input_segundo {
+    background-color: rgba(47, 65, 86, 1);
+    width: 2.5em;
+    border-radius: 0.3em;
+    border: solid 0.15em;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: 0 0 1em rgba(47, 65, 86, 1);
+}
+
+/*estilização do temporizador*/
+#temporizador {
+    color: #ffffff;
+    font-size: 1.6em;
+    width: 11em;
+    margin-bottom: 0.5em;
+    border-radius: 0.3em;
+    background-color: rgba(47, 65, 86, 1);
+    box-shadow: 0 0 1em rgba(47, 65, 86, 1);
+    border: solid 0.09em;
+}
+
+/*estilização dos botões de iniciar, pausar e resetar*/
+.botao {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    font-size: 2.5em;
+}
+
+header {
+    font-size: 0.9em;
+    margin: 1.5em;
+    text-align: center;
+}
+
+
+
