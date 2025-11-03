@@ -1,4 +1,4 @@
-# portfoliohub_final
+# PortfólioHUB final
 
 Esse repositório foi feito com o objetivo de implantar o portfolioHUB da matéria de bootcamp I com apoio da ferramenta de IA GEMINI. Iniciei me apresentando e apresentando a matéria Bootcamp I e após isso, mostrei as orientações e os trabalhos das entregas anteriores (inicial e intermediária) para que a IA pudesse entender o contexto de implantação do portfolioHUB.
 
